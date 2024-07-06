@@ -5,6 +5,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+import java.util.Objects;
+
 /**
  * Created by jt on 8/14/21.
  */
@@ -49,7 +51,7 @@ public class Author {
 
         Author author = (Author) o;
 
-        return id != null ? id.equals(author.id) : author.id == null;
+        return Objects.equals(id, author.id);
     }
 
     @Override
