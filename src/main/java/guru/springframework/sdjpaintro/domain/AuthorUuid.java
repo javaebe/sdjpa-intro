@@ -1,7 +1,6 @@
 package guru.springframework.sdjpaintro.domain;
 
 import org.hibernate.annotations.JdbcTypeCode;
-import org.hibernate.annotations.Type;
 
 import jakarta.persistence.*;
 
